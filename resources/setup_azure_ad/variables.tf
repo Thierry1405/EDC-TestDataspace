@@ -1,6 +1,6 @@
 # supply the tenant ID for your Azure Tenant here
 variable "tenant_id" {
-  default = "<YOUR_TENANT_ID>"
+  default = "51b392d5-3451-4f62-abe9-119bf556ccf4"
 }
 # App registration name for the Federated Credential for GH Actions
 variable "gh_actions_appname" {
