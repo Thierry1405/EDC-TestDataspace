@@ -273,3 +273,11 @@ resource "azurerm_storage_blob" "testfile2" {
   type                   = "Block"
   source                 = "sample-data/text-document.txt"
 }
+
+resource "azurerm_storage_blob" "testfile3" {
+  name                   = "my_test.txt"
+  storage_account_name   = azurerm_storage_account.assets.name
+  storage_container_name = azurerm_storage_container.assets_container.name
+  type                   = "Block"
+  source                 = "sample-data/my_test.txt"
+}
